@@ -44,25 +44,33 @@ const faqData = [
 
 export const NotificationSection = (): JSX.Element => {
   return (
-    <section className="relative w-full">
+    <section className="relative w-full overflow-hidden">
+      {/* Background */}
       <img
-        className="absolute top-[-33px] left-0 w-full h-[1195px]"
-        alt="Group"
+        className="absolute top-[-33px] left-0 w-full h-[1195px] object-cover"
+        alt="Background"
         src="/group-1707485330.png"
       />
 
+      {/* Content Container */}
       <div className="relative px-[59px] py-[54px]">
         <div className="relative w-full max-w-[1320px] mx-auto">
+          
+          {/* Bottom Gradient Overlay */}
           <div className="absolute left-0 bottom-[103px] w-full h-[303px] bg-[linear-gradient(180deg,rgba(10,12,15,0)_0%,rgba(10,12,15,0.55)_55%,rgba(10,12,15,1)_100%)]" />
 
+          {/* Background Group */}
           <img
             className="absolute top-[-166px] left-[65px] w-[1132px] h-[1144px]"
-            alt="Group"
+            alt="Background group"
             src="/group-1707485346.png"
           />
 
+          {/* FAQ Content */}
           <div className="relative flex flex-col items-start gap-2 px-[31px] py-10 border-t [border-top-style:dashed] border-b [border-bottom-style:dashed] border-[#ffffff33]">
             <div className="flex flex-col w-full items-center gap-[50px]">
+              
+              {/* Header */}
               <div className="flex flex-col w-[506px] items-center gap-4">
                 <div className="opacity-50 [font-family:'Geist_Mono',Helvetica] font-medium text-white text-xs text-center tracking-[0] leading-6">
                   FAQS
@@ -71,21 +79,20 @@ export const NotificationSection = (): JSX.Element => {
                 <h2 className="[font-family:'Geist',Helvetica] font-semibold text-white text-[56px] text-center tracking-[0] leading-[62px]">
                   Got Questions?
                   <br />
-                  We&apos;ve got answers
+                  We've got answers
                 </h2>
 
                 <p className="w-[590px] [font-family:'Geist',Helvetica] font-normal text-[#ffffffb8] text-sm text-center tracking-[0] leading-[21px]">
-                  <span className="[font-family:'Geist',Helvetica] font-normal text-[#ffffffb8] text-sm tracking-[0] leading-[21px]">
-                    Can&#39;t find the solution you need? Email us at{" "}
-                  </span>
+                  Can't find the solution you need? Email us at{" "}
                   <span className="underline">support@ops0.com</span>
                 </p>
               </div>
 
+              {/* FAQ List */}
               <div className="flex flex-col items-start justify-center gap-6 w-full">
                 <img
                   className="w-full h-px object-cover"
-                  alt="Line"
+                  alt="Top line"
                   src="/line-4.svg"
                 />
 
@@ -127,7 +134,7 @@ export const NotificationSection = (): JSX.Element => {
 
                       <img
                         className="w-full h-px object-cover mt-6"
-                        alt="Line"
+                        alt="Divider line"
                         src="/line-4.svg"
                       />
                     </AccordionItem>
@@ -138,32 +145,33 @@ export const NotificationSection = (): JSX.Element => {
           </div>
         </div>
 
-        <div className="flex flex-col w-[1256px] items-center gap-10 absolute top-[898px] left-[calc(50.00%_-_628px)]">
+        {/* CTA Button */}
+        <div className="absolute top-[898px] left-1/2 transform -translate-x-1/2 w-[1256px] flex flex-col items-center gap-10">
           <Button
             variant="ghost"
-            className="bg-[linear-gradient(90deg,rgba(255,255,255,0)_0%,rgba(255,255,255,0.12)_22%,rgba(255,255,255,0.12)_29%,rgba(4,4,6,0.12)_51%,rgba(255,255,255,0.12)_75%,rgba(255,255,255,0.12)_83%,rgba(255,255,255,0)_100%)] inline-flex items-center justify-center gap-3 pl-3 pr-1 py-1 rounded-[48px] backdrop-blur-[4.5px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(4.5px)_brightness(100%)] h-auto hover:bg-[linear-gradient(90deg,rgba(255,255,255,0)_0%,rgba(255,255,255,0.12)_22%,rgba(255,255,255,0.12)_29%,rgba(4,4,6,0.12)_51%,rgba(255,255,255,0.12)_75%,rgba(255,255,255,0.12)_83%,rgba(255,255,255,0)_100%)]"
+            className="bg-[linear-gradient(90deg,rgba(255,255,255,0)_0%,rgba(255,255,255,0.12)_22%,rgba(255,255,255,0.12)_29%,rgba(4,4,6,0.12)_51%,rgba(255,255,255,0.12)_75%,rgba(255,255,255,0.12)_83%,rgba(255,255,255,0)_100%)] inline-flex items-center justify-center gap-3 pl-3 pr-1 py-1 rounded-[48px] backdrop-blur-[4.5px] h-auto border-0 hover:bg-[linear-gradient(90deg,rgba(255,255,255,0.1)_0%,rgba(255,255,255,0.2)_22%,rgba(255,255,255,0.2)_29%,rgba(4,4,6,0.2)_51%,rgba(255,255,255,0.2)_75%,rgba(255,255,255,0.2)_83%,rgba(255,255,255,0.1)_100%)]"
           >
-            <span className="[font-family:'Geist_Mono',Helvetica] font-bold text-white text-sm tracking-[0] leading-6 whitespace-nowrap">
+            <span className="[font-family:'Geist_Mono',Helvetica] font-bold text-white text-sm tracking-[0] leading-6">
               DEMO WITH FOUNDER
             </span>
             <img
               className="w-10 h-10"
-              alt="Frame"
+              alt="Arrow"
               src="/frame-2018776555-1.svg"
             />
           </Button>
         </div>
       </div>
 
+      {/* Diagonal Line Holders */}
       <img
-        className="top-0 right-[1380px] h-[1127px] absolute w-[60px]"
-        alt="Diagonal line holder"
+        className="absolute top-0 right-[1380px] h-[1127px] w-[60px]"
+        alt="Diagonal line holder left"
         src="/diagonal-line-holder-4.svg"
       />
-
       <img
-        className="top-0 right-0 h-[1045px] absolute w-[60px]"
-        alt="Diagonal line holder"
+        className="absolute top-0 right-0 h-[1045px] w-[60px]"
+        alt="Diagonal line holder right"
         src="/diagonal-line-holder-4.svg"
       />
     </section>
