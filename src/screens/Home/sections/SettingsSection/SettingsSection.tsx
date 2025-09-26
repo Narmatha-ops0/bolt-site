@@ -119,7 +119,7 @@ export const SettingsSection = (): JSX.Element => {
             />
 
             {/* Connect Account Button */}
-            <Button className="w-[158px] h-12 bg-[#ffffff14] rounded-lg border-[1.3px] border-solid border-[#ffffff3d] shadow-[0px_10.42px_31.27px_2.61px_#00000033] backdrop-blur-[37.14px] [font-family:'Geist_Mono',Helvetica] font-bold text-white text-sm hover:bg-[#ffffff20] border-0">
+            <Button className="w-[158px] h-12 bg-[#ffffff14] rounded-lg border-[1.3px] border-solid border-[#ffffff3d] shadow-[0px_10.42px_31.27px_2.61px_#00000033] backdrop-blur-[37.14px] [font-family:'Geist_Mono',Helvetica] font-bold text-white text-sm hover:bg-[#ffffff20]">
               CONNECT ACCOUNT
             </Button>
           </div>

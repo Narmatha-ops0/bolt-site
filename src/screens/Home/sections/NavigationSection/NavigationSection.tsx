@@ -165,7 +165,7 @@ export const NavigationSection = (): JSX.Element => {
                           <div
                             key={featureIndex}
                             className="flex items-center gap-2"
-                          >
+                  flex-1 border-t border-b border-dashed border-[#ffffff33] bg-[#ffffff0a] backdrop-blur-[2px] relative
                             <img
                               className="w-4 h-4"
                               alt="Check"
@@ -279,3 +279,4 @@ export const NavigationSection = (): JSX.Element => {
     </section>
   );
 };
+          <Card className="flex flex-col gap-2 px-6 py-4 w-full border-r border-b border-l border-dashed border-[#ffffff33] bg-[#ffffff0a] backdrop-blur-[2px]">

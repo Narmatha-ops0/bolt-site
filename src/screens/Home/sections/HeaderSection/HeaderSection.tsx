@@ -73,7 +73,7 @@ export const HeaderSection = (): JSX.Element => {
               <Card
                 key={index}
                 className={`
-                  flex-1 border-t border-b border-[#393939] border-dashed bg-transparent
+                  flex-1 border-t border-b border-[#ffffff33] border-dashed bg-transparent
                   ${item.isExpanded ? "[background:radial-gradient(50%_50%_at_13%_65%,rgba(108,224,255,0.06)_0%,rgba(164,160,255,0.06)_100%)]" : ""}
                   ${index === 0 ? "relative" : ""}
                   ${index === useCaseItems.length - 1 ? "" : "border-b-0"}
@@ -104,7 +104,7 @@ export const HeaderSection = (): JSX.Element => {
           </div>
 
           {/* Right Side - Demo Interface */}
-          <div className="flex-1 h-full border-t border-b border-l border-[#393939] border-dashed bg-[linear-gradient(180deg,rgba(41,50,90,0.6)_0%,rgba(3,2,13,0.6)_100%)] relative">
+          <div className="flex-1 h-full border-t border-b border-l border-[#ffffff33] border-dashed bg-[linear-gradient(180deg,rgba(41,50,90,0.6)_0%,rgba(3,2,13,0.6)_100%)] relative">
             {/* Demo Window */}
             <div className="absolute top-6 left-1/2 transform -translate-x-1/2 w-[739px] h-[400px] rounded-[10.53px_10.53px_0px_0px] overflow-hidden shadow-[0px_-2.63px_10.53px_#0000000d,0px_-1.32px_0px_#00000005]">
               

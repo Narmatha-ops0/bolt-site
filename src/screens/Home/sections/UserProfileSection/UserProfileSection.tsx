@@ -74,7 +74,7 @@ export const UserProfileSection = (): JSX.Element => {
             <h1 className="[font-family:'Geist',Helvetica] font-semibold text-white text-[74px] text-center tracking-[0] leading-[74px]">
               World's First
             </h1>
-            <h1 className="[background:radial-gradient(50%_50%_at_13%_65%,rgba(108,224,255,1)_0%,rgba(164,160,255,1)_100%)] [-webkit-background-clip:text] bg-clip-text [-webkit-text-fill-color:transparent] [font-family:'Geist',Helvetica] font-semibold text-[74px] text-center tracking-[0] leading-[74px]">
+            <h1 className="[background:radial-gradient(50%_50%_at_13%_65%,rgba(108,224,255,1)_0%,rgba(164,160,255,1)_100%)] [-webkit-background-clip:text] bg-clip-text [-webkit-text-fill-color:transparent] text-transparent [font-family:'Geist',Helvetica] font-semibold text-[74px] text-center tracking-[0] leading-[74px]">
               AI DevOps Engineer
             </h1>
             
@@ -135,7 +135,7 @@ export const UserProfileSection = (): JSX.Element => {
       </div>
 
       {/* Bottom Icons */}
-      <div className="absolute top-[703px] left-1/2 transform -translate-x-1/2 flex items-start gap-[268px]">
+      <div className="absolute top-[703px] left-1/2 transform -translate-x-1/2 flex items-center justify-center gap-[268px] w-[840px]">
         <div className="flex flex-col w-[108px] items-center gap-2">
           <img
             className="w-[136.97px] h-auto"
@@ -144,7 +144,7 @@ export const UserProfileSection = (): JSX.Element => {
           />
         </div>
 
-        <div className="flex flex-col w-24 items-center gap-[15px]">
+        <div className="flex flex-col w-24 items-center gap-[15px] relative">
           <img
             className="w-full h-52"
             alt="Frame center"
